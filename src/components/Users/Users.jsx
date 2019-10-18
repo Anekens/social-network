@@ -5,21 +5,22 @@ import userPhoto from '../../assets/images/user.png'
 
 let Users = (props) => {
 
-    if (props.users.length === 0) {
-
-    axios.get("https://social-network.samuraijs.com/api/1.0/users"). then(response => {
-
-        props.setUsers(response.data.items);
-    });
-}
+    let getUsers = () => {
+        if (props.users.length === 0) {
+            axios.get("https://social-network.samuraijs.com/api/1.0/users").then(response => {
+                props.setUsers(response.data.items);
+            });
+        }
+    };
 
     return (
         <div>
+            <button onClick={getUsers}>Get users</button>
             {
                 props.users.map(u => <div key={u.id}>
                     <span>
                         <div>
-                            <img src={u.photos.small != null ? u.photos.small : userPhoto }
+                            <img src={u.photos.small != null ? u.photos.small : userPhoto}
                                  className={s.userPhoto}/>
                         </div>
                         <div>
