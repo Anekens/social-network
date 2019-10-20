@@ -3,9 +3,10 @@ import s from "./users.module.css";
 import userPhoto from "../../assets/images/user.png";
 
 
-let Users = (props) => {
+const Users = (props) => {
 
     let pagesCount = Math.ceil(props.totalUsersCount / props.pageSize);
+
 
     let pages = [];
     for (let i = 1; i <= pagesCount; i++) {
