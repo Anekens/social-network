@@ -8,3 +8,16 @@
     margin-top: 10px;
     margin-left: 20px;
 }
+
+.loginBlock {
+    float: right;
+}
+
+.loginBlock a {
+    text-decoration: none;
+    color: white;
+}
+
+.loginBlock a.activeLink {
+    color: #05ffca;
+}
