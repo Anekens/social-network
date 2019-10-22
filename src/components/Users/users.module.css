@@ -6,3 +6,8 @@
 .selectedPage {
     font-weight: bold;
 }
+
+.pageContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
