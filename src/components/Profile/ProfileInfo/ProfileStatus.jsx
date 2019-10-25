@@ -3,15 +3,6 @@ import React from 'react';
 
 class ProfileStatus extends React.Component {
 
-    componentDidUpdate(prevProps, prevState) {
-
-        if (prevProps.state !== this.props.status) {
-            this.setState({
-                status: this.props.status
-            })
-        }
-    }
-
     state = {
         editMode: false,
         status: this.props.status
@@ -35,6 +26,14 @@ class ProfileStatus extends React.Component {
             status: e.currentTarget.value
         })
     };
+
+    componentDidUpdate(prevProps, prevState) {
+        if (prevProps.status !== this.props.status) {
+            this.setState({
+                status: this.props.status
+            })
+        }
+    }
 
     render() {
 
