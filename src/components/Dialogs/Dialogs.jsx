@@ -2,7 +2,7 @@ import React from 'react';
 import s from "./Dialogs.module.css"
 import DialogItem from "./DialogItem/DialogItem";
 import Message from "./Message/Message";
-import AddMessageFormRedux from "./AddMessageForm";
+import AddMessageFormRedux from "./AddMessageForm/AddMessageForm";
 import {Redirect} from "react-router-dom";
 
 
