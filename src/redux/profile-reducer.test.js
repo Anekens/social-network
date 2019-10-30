@@ -33,7 +33,7 @@ it('after deleting length of message should be decrement', () => {
 
     let newState = profileReducer(state, action);
 
-    expect (newState.posts.length).toBe(3);
+    expect (newState.posts.length).toBe(2);
 });
 
 it('after deleting length should`t be decrement if id incorrect', () => {
