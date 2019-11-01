@@ -12,8 +12,12 @@ const LoginForm = (props) => {
                 {type: "password"})}
             {createField(null, "rememberMe", [], Input, {type: "checkbox"},
                 "remember me")}
-            {props.error &&
-            <div className={s.formSummaryError}>
+
+            {props.captchaUrl && <img src={props.captchaUrl} alt="captcha"/>}
+            {props.captchaUrl && createField("Symbols from image", "captcha",
+                [required], Input)}
+
+            {props.error && <div className={s.formSummaryError}>
                 {props.error}
             </div>
             }
