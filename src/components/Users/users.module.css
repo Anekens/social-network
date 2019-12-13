@@ -1,5 +1,101 @@
+.main {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-top: 21px;
+}
+
+.item {
+    width: 540px;
+    height: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+}
+
 .userPhoto {
     width: 100px;
     height: 100px;
 }
+
+.avatar img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.info {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-left: 20px;
+}
+
+.name {
+    font-size: 21px;
+    font-weight: 600;
+}
+
+
+.status {
+    font-weight: 700;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+
+    padding-left: 12px;
+    margin-top: -10px;
+}
+
+.follow {
+    display: inline-block;
+    width: 90px;
+    height: 27px;
+
+    padding: 3px;
+
+    text-align: center;
+    font-size: 15px;
+    line-height: 17px;
+    font-weight: 600;
+
+    border: 2px solid #414345;
+    border-radius: 12px;
+    background-color: transparent;
+
+    transition: all .2s ease;
+}
+
+.follow:not([disabled]):hover {
+    cursor: pointer;
+    color: #414345;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -1,0 +1,50 @@
+
+.item {
+    height: 45px;
+    display: flex;
+    justify-content: flex-start;
+
+    /* border-bottom: 1px solid rgba(0, 0, 0, .2); */
+
+    padding: 10px;
+} 
+
+.avatarImg {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+}
+
+.name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-left: 15px;
+
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 600;
+    color: rgb(8, 6, 6);
+    text-align: left;
+}
+
+.message {
+    width: 100%;
+    height: 100%;
+
+    padding: 5px 0 5px 30px;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 16px;
+    font-style: italic;
+
+    background: rgba(255, 255, 255, .2);
+    border-radius: 12px;
+}
+
+a {
+    color: black;
+}

@@ -9,7 +9,7 @@ const SET_TOTAL_USERS_COUNT = 'social-network/users/SET_TOTAL_USERS_COUNT';
 const TOGGLE_IS_FETCHING = 'social-network/users/TOGGLE_IS_FETCHING';
 const TOGGLE_IS_FOLLOWING_PROGRESS = 'social-network/users/TOGGLE_IS_FOLLOWING_PROGRESS';
 
-let initialState = {
+const initialState = {
     users: [],
     pageSize: 10,
     totalUsersCount: 0,
@@ -55,8 +55,6 @@ const usersReducer = (state = initialState, action) => {
     }
 };
 
-//ActionCreators
-
 export const followSuccess = (userId) => ({type: FOLLOW, userId});
 export const unfollowSuccess = (userId) => ({type: UNFOLLOW, userId});
 export const setUsers = (users) => ({type: SET_USERS, users});
@@ -86,7 +84,7 @@ export const requestUsers = (page, pageSize) => {
 
 const followUnfollowFlow = async (dispatch, userId, apiMethod, actionCreator) => {
     dispatch(toggleFollowingProgress(true, userId));
-    let response = await apiMethod(userId);
+    const response = await apiMethod(userId);
     if (response.data.resultCode === 0) {
         dispatch(actionCreator(userId))
     }

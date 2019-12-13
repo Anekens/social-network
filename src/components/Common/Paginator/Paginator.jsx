@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import styles from "./Paginator.module.css";
 import cn from "classnames";
+import prev from '../../../assets/images/buttons/prevBtn.svg';
+import next from '../../../assets/images/buttons/nextBtn.svg';
 
 const Paginator = ({totalItemsCount, pageSize, currentPage, onPageChanged, portionSize = 10}) => {
 
@@ -19,9 +21,11 @@ const Paginator = ({totalItemsCount, pageSize, currentPage, onPageChanged, porti
 
     return <div className={styles.paginator}>
         {portionNumber > 1 &&
-        <button onClick={() => {
+        <button className={styles.btn} onClick={() => {
             setPortionNumber(portionNumber - 1)
-        }}>PREV</button>}
+        }}>
+            <img className={styles.btnIcon} src={prev}/>
+        </button>}
 
         {pages
             .filter(p => p >= leftPortionPageNumber && p <= rightPortionPageNumber)
@@ -35,9 +39,10 @@ const Paginator = ({totalItemsCount, pageSize, currentPage, onPageChanged, porti
                              }}>{p}</span>
             })}
         {portionCount > portionNumber &&
-        <button onClick={() => {
+        <button className={styles.btn}
+                onClick={() => {
             setPortionNumber(portionNumber + 1)
-        }}>NEXT</button>}
+        }}> <img className={styles.btnIcon} src={next} /></button>}
 
 
     </div>

@@ -1,17 +1,44 @@
 .paginator {
     margin: 10px;
+    display: flex;
+    align-items: center;
+
+    height: 25px;
 }
 .pageNumber {
     padding: 2px;
-    border: 1px solid grey;
+    margin: 0 5px;
+
+    font-size: 20px;
+    line-height: 25px;
 }
+
+.pageNumber:hover {
+    cursor: pointer;
+}
+
+.btn {
+    background: transparent;
+    border: 0;
+    outline: 0;
+
+    margin: 0;
+    padding: 0;
+}
+
+.btnIcon {
+    width: 25px;
+    height: 25px;
+
+    margin-bottom: -4px;
+}
+
+.btnIcon:hover {
+    cursor: pointer;
+}
+
 
 .pageNumber.selectedPage {
     font-weight: bold;
     border-color: black;
 }
-
-/*.pageContainer {*/
-/*    display: flex;*/
-/*    flex-wrap: wrap;*/
-/*}*/

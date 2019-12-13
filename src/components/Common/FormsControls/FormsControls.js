@@ -33,4 +33,16 @@ export const createField = (placeholder, name, validate, component, props = {}, 
                {...props}/>{text}
     </div>);
 
+export const Dialog = ({input, meta}) => {
+
+    const error = meta.touched && meta.error;
+
+    return (
+        <div>
+            <textarea className={error ? s.textareaDialog + ' ' + s.error :
+                s.textareaDialog} {...input} />
+            {error && <span className={s.errorMessage}>{meta.error}</span>}
+        </div>
+    )
+};
 
