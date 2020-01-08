@@ -4,6 +4,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-left: 100px;
+    padding-top: 50px;
 }
 
 .users {

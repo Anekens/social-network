@@ -9,6 +9,7 @@
     flex-wrap: wrap;
     flex-direction: column;
     padding-top: 21px;
+    padding-left: 100px;
 }
 
 .item {

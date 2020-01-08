@@ -5,8 +5,8 @@
 
 .descriptionBlock {
     display: flex;
-
-    padding: 10px;
+    padding-left: 100px;
+    padding-top: 50px;
 
 }
 
