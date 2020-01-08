@@ -34,16 +34,20 @@ const ProfileInfo = (props,) => {
     };
 
     return (
-        <div>
-            <div className={s.descriptionBlock}>
-                <img className={s.mainPhoto}
-                     alt={"avatar"}
-                     src={props.profile.photos.large || userPhoto}/>
-                {props.isOwner && <input type={"file"} onChange={onMainPhotoSelected}/>}
-
+        <div className={s.descriptionBlock}>
+            <div>
+                <div>
+                    <img className={s.mainPhoto}
+                         alt={"avatar"}
+                         src={props.profile.photos.large || userPhoto}/>
+                </div>
+                <div>
+                    {props.isOwner && <input type={"file"} onChange={onMainPhotoSelected}/>}
+                </div>
                 <ProfileStatusWithHooks status={props.status}
                                         updateStatus={props.updateStatus}/>
-                <h2>Descriptions</h2>
+            </div>
+            <div>
                 {editMode
                     ? <ProfileDataForm profile={props.profile}
                                        onSubmit={onSubmit}

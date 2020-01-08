@@ -5,9 +5,7 @@ import Contacts from "./Contacts";
 const ProfileDataUser = (props) => {
     return (
         <div>
-            {props.isOwner && <div>
-                <button onClick={props.goToEditMode}>Edit</button>
-            </div>}
+
             <div>
                 <b>Full name: </b>{props.profile.fullName}
             </div>
@@ -27,6 +25,10 @@ const ProfileDataUser = (props) => {
                                  contactValue={[props.profile.contacts[key]]}
                                  key={key}/>
             })}
+                {props.isOwner &&
+                <div>
+                    <button onClick={props.goToEditMode}>Edit</button>
+                </div>}
             </div>
         </div>
     )

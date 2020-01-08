@@ -1,3 +1,7 @@
+*Credentials for testing
+*Email: free@samuraijs.com
+*Password: free
+
 Social Network.
 
 **Stack:**

@@ -8,9 +8,7 @@ import e from '../../Common/FormsControls/FormsControls.module.css'
 const ProfileDataForm = (props) => {
     return (
         <form onSubmit={props.handleSubmit}>
-            <div>
-                <button>Save</button>
-            </div>
+
             {props.error &&
             <div className={e.formSummaryError}>
                 {props.error}
@@ -43,6 +41,9 @@ const ProfileDataForm = (props) => {
                     </div>
                 )
             })}
+                <div>
+                    <button>Save</button>
+                </div>
             </div>
         </form>
     )

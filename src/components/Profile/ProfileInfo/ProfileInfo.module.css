@@ -4,7 +4,10 @@
 }
 
 .descriptionBlock {
+    display: flex;
+
     padding: 10px;
+
 }
 
 .mainPhoto{
