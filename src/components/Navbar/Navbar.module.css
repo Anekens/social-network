@@ -1,7 +1,7 @@
 .nav {
     margin-top: 70px;
-       width: 13%;
-    height: calc(100vh - 100px);
+    width: 13%;
+    height: calc(100vh - 50px);
 
 }
 
@@ -10,13 +10,11 @@
     padding-left: 30px;
     width: 11%;
     height: 100%;
-
     position: fixed;
     display: flex;
     flex-direction: column;
 
-    background: -webkit-linear-gradient(to right, #414345, #2325261c);
-    background: linear-gradient(to right, #414345, #23252636);
+    opacity: .7;
 }
 
 .item {
@@ -32,8 +30,8 @@
 }
 
 .item a.activeNav {
-    color: rgba(255,255,255,.3);
-    text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
+    color: rgba(255, 255, 255, .3);
+    text-shadow: 0 0 15px rgba(255, 255, 255, .5), 0 0 10px rgba(255, 255, 255, .5);
 }
 
 .friends {

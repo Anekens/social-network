@@ -1,6 +1,7 @@
 import React from 'react';
 import Contacts from "./Contacts";
-
+import {Button} from "antd";
+import 'antd/dist/antd.css';
 
 const ProfileDataUser = (props) => {
     return (
@@ -27,7 +28,7 @@ const ProfileDataUser = (props) => {
             })}
                 {props.isOwner &&
                 <div>
-                    <button onClick={props.goToEditMode}>Edit</button>
+                    <Button onClick={props.goToEditMode}>Edit</Button>
                 </div>}
             </div>
         </div>

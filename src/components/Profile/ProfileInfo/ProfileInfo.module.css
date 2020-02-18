@@ -7,6 +7,7 @@
     display: flex;
     padding-left: 100px;
     padding-top: 50px;
+    color: #545658;
 
 }
 
@@ -16,5 +17,12 @@
 
 .contact{
     padding-left: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    .descriptionBlock {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 

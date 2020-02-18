@@ -1,7 +1,6 @@
 import React from 'react';
 import s from './App.module.css';
 import Navbar from "./components/Navbar/Navbar";
-import Settings from "./components/Settings/Settings";
 import {HashRouter, Redirect, Route, Switch, withRouter} from "react-router-dom";
 import UsersContainer from "./components/Users/UsersContainer";
 import HeaderContainer from "./components/Header/HeaderContainer";

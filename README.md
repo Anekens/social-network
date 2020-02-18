@@ -1,6 +1,8 @@
-*Credentials for testing
-*Email: free@samuraijs.com
-*Password: free
+
+* Demo: https://pavelmilenki.github.io/SocialNetwork/
+* Credentials for testing
+* Email: free@samuraijs.com
+* Password: free
 
 Social Network.
 
